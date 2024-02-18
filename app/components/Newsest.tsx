@@ -1,4 +1,5 @@
 
+
 import Link from "next/link";
 import { simplifiedProduct } from "../interface";
 import { ArrowRight } from "lucide-react";
@@ -20,6 +21,8 @@ async function getData() {
 
   return data;
 }
+
+export const dynamic = "force-dynamic";
 
 export default async function Newest() {
   const data: simplifiedProduct[] = await getData();
